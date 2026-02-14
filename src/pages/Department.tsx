@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import content from '../data/content.json';
 
 interface Project {
   id: string;
@@ -11,70 +12,15 @@ interface Project {
   videoUrl: string; // YouTube embed URL
 }
 
-const departmentData: Record<string, { title: string; description: string; projects: Project[] }> = {
-  sound: {
-    title: 'Sound',
-    description: 'Capturing the unseen. From field recording to post-production sound design.',
-    projects: [
-      { 
-        id: 's1',
-        title: 'Echoes of Silence', 
-        role: 'Sound Designer', 
-        year: '2024', 
-        client: 'Independent Film', 
-        description: 'Atmospheric soundscapes for a psychological thriller.',
-        thumbnail: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2070&auto=format&fit=crop',
-        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1'
-      },
-      { 
-        id: 's2',
-        title: 'Urban Pulse', 
-        role: 'Location Sound', 
-        year: '2023', 
-        client: 'Nike', 
-        description: 'High-energy commercial shoot in downtown Montreal.',
-        thumbnail: 'https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=2070&auto=format&fit=crop',
-        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1'
-      },
-    ],
-  },
-  production: {
-    title: 'Production',
-    description: 'Managing complexity. Bringing creative visions to life through meticulous planning.',
-    projects: [
-      { 
-        id: 'p1',
-        title: 'Global Summit 2024', 
-        role: 'Executive Producer', 
-        year: '2024', 
-        client: 'TechCorp', 
-        description: 'Multi-day international conference production.',
-        thumbnail: 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?q=80&w=2070&auto=format&fit=crop',
-        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1'
-      },
-    ],
-  },
-  camera: {
-    title: 'Camera',
-    description: 'Visual storytelling. Crafting every frame with intention and light.',
-    projects: [
-      { 
-        id: 'c1',
-        title: 'Mountain High', 
-        role: 'Cinematographer', 
-        year: '2024', 
-        client: 'Patagonia', 
-        description: 'Stunning visuals captured in the Swiss Alps.',
-        thumbnail: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop',
-        videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1'
-      },
-    ],
-  },
-};
+interface DepartmentData {
+  title: string;
+  description: string;
+  projects: Project[];
+}
 
 const Department: React.FC<{ type: string }> = ({ type }) => {
-  const data = departmentData[type];
-  const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
+  const data = (content as Record<string, DepartmentData>)[type];
+    const [activeVideoId, setActiveVideoId] = useState<string | null>(null);
 
   if (!data) return null;
 
