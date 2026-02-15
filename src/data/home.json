@@ -1,0 +1,12 @@
+{
+  "hero": {
+    "sm": "/images/home/hero-sm.jpg",
+    "md": "/images/home/hero-lg.jpg",
+    "lg": "/images/home/hero-lg.jpg"
+  },
+  "departments": {
+    "sound": "Immersive audio landscapes and precision recording.",
+    "production": "Seamless execution from concept to final delivery.",
+    "camera": "Visual storytelling through light and composition."
+  }
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Instagram, Linkedin, Mail } from 'lucide-react';
+import content from "../data/about.json";
 
 const Footer: React.FC = () => {
   return (
@@ -10,13 +11,13 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="flex space-x-6">
-          <a href="#" className="text-accent/60 hover:text-white transition-colors">
+          <a href={`https://www.instagram.com/${content.socials.instagram}`} className="text-accent/60 hover:text-white transition-colors">
             <Instagram size={20} />
           </a>
-          <a href="#" className="text-accent/60 hover:text-white transition-colors">
+          <a href={`https://linkedin.com/in/${content.socials.linkedin}`} className="text-accent/60 hover:text-white transition-colors">
             <Linkedin size={20} />
           </a>
-          <a href="mailto:hello@davidmutrux.com" className="text-accent/60 hover:text-white transition-colors">
+          <a href={`mailto:${content.socials.email}`} className="text-accent/60 hover:text-white transition-colors">
             <Mail size={20} />
           </a>
         </div>

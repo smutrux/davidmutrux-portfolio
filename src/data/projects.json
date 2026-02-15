@@ -1,0 +1,76 @@
+{
+  "sound": {
+    "title": "Sound",
+    "description": "Capturing the unseen. From field recording to post-production sound design.",
+    "projects": [
+      {
+        "id": "s1",
+        "title": "Echoes of Silence",
+        "role": "Sound Designer",
+        "year": "2024",
+        "client": "Independent Film",
+        "description": "Atmospheric soundscapes for a psychological thriller.",
+        "thumbnails": {
+          "sm": "/images/projects/echoes-of-silence-sm.jpg",
+          "md": "/images/projects/echoes-of-silence-md.jpg",
+          "lg": "/images/projects/echoes-of-silence-lg.jpg"
+        },
+        "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+      },
+      {
+        "id": "s2",
+        "title": "Urban Pulse",
+        "role": "Location Sound",
+        "year": "2023",
+        "client": "Nike",
+        "description": "High-energy commercial shoot in downtown Montreal.",
+        "thumbnails": {
+          "sm": "/images/projects/echoes-of-silence-sm.jpg",
+          "md": "/images/projects/echoes-of-silence-md.jpg",
+          "lg": "/images/projects/echoes-of-silence-lg.jpg"
+        },
+        "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+      }
+    ]
+  },
+  "production": {
+    "title": "Production",
+    "description": "Managing complexity. Bringing creative visions to life through meticulous planning.",
+    "projects": [
+      {
+        "id": "p1",
+        "title": "Global Summit 2024",
+        "role": "Executive Producer",
+        "year": "2024",
+        "client": "TechCorp",
+        "description": "Multi-day international conference production.",
+        "thumbnails": {
+          "sm": "/images/projects/echoes-of-silence-sm.jpg",
+          "md": "/images/projects/echoes-of-silence-md.jpg",
+          "lg": "/images/projects/echoes-of-silence-lg.jpg"
+        },
+        "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+      }
+    ]
+  },
+  "camera": {
+    "title": "Camera",
+    "description": "Visual storytelling. Crafting every frame with intention and light.",
+    "projects": [
+      {
+        "id": "c1",
+        "title": "Mountain High",
+        "role": "Cinematographer",
+        "year": "2024",
+        "client": "Patagonia",
+        "description": "Stunning visuals captured in the Swiss Alps.",
+        "thumbnails": {
+          "sm": "/images/projects/echoes-of-silence-sm.jpg",
+          "md": "/images/projects/echoes-of-silence-md.jpg",
+          "lg": "/images/projects/echoes-of-silence-lg.jpg"
+        },
+        "videoUrl": "https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1"
+      }
+    ]
+  }
+}
